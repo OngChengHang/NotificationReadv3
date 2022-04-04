@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotificationRead">
+
+    <!--Edit text for getting id-->
+    <EditText
+        android:id="@+id/idEdtID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter ID"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <!--Button for adding your course to Firebase-->
+    <Button
+        android:id="@+id/idBtnGetResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/blue_500"
+        android:text="Get Results"
+        android:textAllCaps="false" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVCom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
